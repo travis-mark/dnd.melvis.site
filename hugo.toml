@@ -1,0 +1,4 @@
+baseURL = 'https://dnd.melvis.site/'
+languageCode = 'en-us'
+title = "Mindari's Minions"
+theme = 'hugo-book'

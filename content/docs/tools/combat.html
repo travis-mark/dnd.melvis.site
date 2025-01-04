@@ -1,0 +1,185 @@
+---
+title: "Initiative Tracker"
+bookToc: false
+---
+<style>
+    .form-group {
+        margin-bottom: 15px;
+        display: flex;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-group input {
+        flex-grow: 1;
+    }
+
+    button {
+        padding: 8px 16px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #45a049;
+    }
+
+    .combatant-inactive, .combatant-active {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 4px;
+        color: #000;
+    }
+
+    .combatant-inactive {
+        background: #f9f9f9;
+        border: 1px solid #ffeeba;
+    }
+
+    .combatant-active {
+        background: #fff3cd;
+        border: 1px solid #ffeeba;
+    }
+
+    .remove-btn {
+        background: #dc3545;
+    }
+
+    .remove-btn:hover {
+        background: #c82333;
+    }
+
+    .turn-controls {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .clear-all {
+        background: #dc3545;
+        margin-top: 15px;
+    }
+</style>
+
+<h2>Initiative Tracker</h2>
+
+<div class="form-group">
+    <input type="text" id="nameInput" placeholder="Character name">
+    <input type="number" id="initiativeInput" placeholder="Initiative">
+    <button onclick="addCombatant()">Add</button>
+</div>
+
+<div id="combatantList"></div>
+
+<div class="turn-controls">
+    <button onclick="previousTurn()">Previous</button>
+    <button onclick="nextTurn()">Next</button>
+</div>
+
+<button onclick="clearAll()" class="clear-all">Clear All</button>
+
+<script>
+    let combatants = [];
+    let currentTurn = 0;
+
+    // Load data from localStorage on page load
+    function loadData() {
+        const savedCombatants = localStorage.getItem('combatants');
+        const savedTurn = localStorage.getItem('currentTurn');
+
+        if (savedCombatants) {
+            combatants = JSON.parse(savedCombatants);
+        }
+        if (savedTurn) {
+            currentTurn = parseInt(savedTurn);
+        }
+        renderCombatants();
+    }
+
+    // Save data to localStorage
+    function saveData() {
+        localStorage.setItem('combatants', JSON.stringify(combatants));
+        localStorage.setItem('currentTurn', currentTurn);
+    }
+
+    function addCombatant() {
+        const name = document.getElementById('nameInput').value;
+        const initiative = parseInt(document.getElementById('initiativeInput').value);
+
+        if (!name || isNaN(initiative)) return;
+
+        combatants.push({
+            name,
+            initiative,
+            id: Date.now()
+        });
+
+        combatants.sort((a, b) => b.initiative - a.initiative);
+
+        document.getElementById('nameInput').value = '';
+        document.getElementById('initiativeInput').value = '';
+
+        saveData();
+        renderCombatants();
+    }
+
+    function removeCombatant(id) {
+        combatants = combatants.filter(c => c.id !== id);
+        if (currentTurn >= combatants.length) {
+            currentTurn = 0;
+        }
+        saveData();
+        renderCombatants();
+    }
+
+    function clearAll() {
+        combatants = [];
+        currentTurn = 0;
+        saveData();
+        renderCombatants();
+    }
+
+    function nextTurn() {
+        if (combatants.length === 0) return;
+        currentTurn = (currentTurn + 1) % combatants.length;
+        saveData();
+        renderCombatants();
+    }
+
+    function previousTurn() {
+        if (combatants.length === 0) return;
+        currentTurn = (currentTurn - 1 + combatants.length) % combatants.length;
+        saveData();
+        renderCombatants();
+    }
+
+    function renderCombatants() {
+        const list = document.getElementById('combatantList');
+        list.innerHTML = '';
+
+        combatants.forEach((combatant, index) => {
+            const div = document.createElement('div');
+            div.className = index === currentTurn ? 'combatant-active' : 'combatant-inactive';
+            div.innerHTML = `
+                    <span>${combatant.name} (${combatant.initiative})</span>
+                    <button class="remove-btn" onclick="removeCombatant(${combatant.id})">Remove</button>
+                `;
+            list.appendChild(div);
+        });
+    }
+
+    // Load data when page loads
+    window.onload = loadData;
+</script>

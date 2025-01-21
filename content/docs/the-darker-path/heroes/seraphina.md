@@ -1,8 +1,7 @@
 ---
 title: "Seraphina Amberspell"
+bookToC: false
 ---
-
-# Seraphina Amberspell
 
 *Lightfoot Halfling Thief Rogue, Chaotic Good*
 

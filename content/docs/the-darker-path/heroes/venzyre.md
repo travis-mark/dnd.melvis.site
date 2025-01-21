@@ -1,9 +1,8 @@
 ---
 title: "Venzyre Ironbell"
+bookToC: false
+subtitle: "The Ghosthammer, Daughter of Grokgok, She Who Rages, Yatil Axe Maiden"
 ---
-
-# Venzyre Ironbell
-**The Ghosthammer, Daughter of Grokgok, She Who Rages, Yatil Axe Maiden**
 
 *Rock Gnome Berserker Barbarian, Neutral Evil*
 

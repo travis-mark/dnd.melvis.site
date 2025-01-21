@@ -1,5 +1,6 @@
 ---
 title: "Benman Madtankard"
+bookToC: false
 ---
 
 Hill Dwarven War Cleric of Tempus, Lawful Neutral

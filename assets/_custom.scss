@@ -1,0 +1,6 @@
+// Hide header during print
+@media print {
+    .book-header {
+        display: none;
+    }
+}

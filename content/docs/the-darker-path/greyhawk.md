@@ -31,17 +31,17 @@ Adventuring parties from the Free City of Greyhawk and other settlements trek ac
 ### The Flanaess
 Artist: Mike Schley
 
-![The Flanaess](https://media.dndbeyond.com/compendium-images/dmg/Bk0e1TBRN0uPvprV/map-5.03-flanaess.jpg) {height:240px,margin-top:40px,mix-blend-mode:multiply}
+![The Flanaess](https://media.dndbeyond.com/compendium-images/dmg/Bk0e1TBRN0uPvprV/map-5.03-flanaess.jpg)
 
 ### Free City of Grayhawk
 Artist: Francesca Baerald
 
-![Free City of Grayhawk](https://media.dndbeyond.com/compendium-images/dmg/Bk0e1TBRN0uPvprV/map-5.01-city-of-greyhawk.jpg) {height:300px,margin-top:40px,mix-blend-mode:multiply}
+![Free City of Grayhawk](https://media.dndbeyond.com/compendium-images/dmg/Bk0e1TBRN0uPvprV/map-5.01-city-of-greyhawk.jpg) 
 
 ### City of Grayhawk and Environs
 Artist: Mike Schley
 
-![City of Grayhawk and Environs](https://media.dndbeyond.com/compendium-images/dmg/Bk0e1TBRN0uPvprV/map-5.02-greyhawk-and-environs.jpg) {height:300px,margin-top:45px,mix-blend-mode:multiply}
+![City of Grayhawk and Environs](https://media.dndbeyond.com/compendium-images/dmg/Bk0e1TBRN0uPvprV/map-5.02-greyhawk-and-environs.jpg) 
 
 
 

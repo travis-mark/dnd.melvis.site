@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: "Introduction"
+title: "The Darker Path"
 ---
 
 # The Darker Path

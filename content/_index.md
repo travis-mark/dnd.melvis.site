@@ -1,6 +1,6 @@
 ---
 title: Main
-type: docs
+
 ---
 
 # Mindari's Minions

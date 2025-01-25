@@ -1,5 +1,5 @@
 ---
-title: "Greyhawk"
+title: "Setting"
 ---
 
 # Greyhawk Primer

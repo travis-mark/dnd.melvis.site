@@ -3,4 +3,7 @@ languageCode = 'en-us'
 title = "Mindari's Minions"
 theme = 'hugo-book'
 markup.goldmark.renderer.unsafe = true
-params.BookTheme = 'auto'
+
+[params]
+BookSection = '*'
+BookTheme = 'auto'

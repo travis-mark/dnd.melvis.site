@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+<head>
+  {{ partial "docs/html-head" . }}
+  {{ partial "docs/inject/head" . }}
+</head>
+<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+  {{- .Content -}}
+</body>
+</html>

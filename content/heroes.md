@@ -1,5 +1,6 @@
 ---
 title: "Our Heroes"
+weight: 1
 ---
 
 # Player Characters

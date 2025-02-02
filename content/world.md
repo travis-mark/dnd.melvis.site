@@ -1,5 +1,6 @@
 ---
 title: "Setting"
+weight: 3
 ---
 
 # Greyhawk Primer

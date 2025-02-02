@@ -1,5 +1,6 @@
 ---
 title: "Magic Items"
+weight: 4
 ---
 
 # Magic Items

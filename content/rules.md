@@ -1,5 +1,6 @@
 ---
 title: "Game Mechanics"
+weight: 2
 ---
 
 <style>

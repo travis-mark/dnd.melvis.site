@@ -2,10 +2,8 @@
 bookHidden: true
 title: "Carric Siannödel"
 ---
-
 ## Carric Siannödel
-
-Chaotic Good Hunter Ranger, Lawful Neutral
+Wood Elf Hunter Ranger, Chaotic Good
 
 |  STR  |  DEX  |  CON  |  INT  |  WIS  |  CHA  |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -16,8 +14,7 @@ Chaotic Good Hunter Ranger, Lawful Neutral
 | 4 (+2)|  2,700|   32  |   35  |   16  |   15  |
 
 #### Magic Items 
-
-- [Bracer of Archery](https://dnd5e.wikidot.com/wondrous-items:bracers-of-archery)
+- (X) [Bracer of Archery](https://dnd5e.wikidot.com/wondrous-items:bracers-of-archery)
 - [Cleansing Stone](https://dnd5e.wikidot.com/wondrous-items:cleansing-stone)
 - (9) [Walloping Arrows](https://dnd5e.wikidot.com/wondrous-items:walloping-ammunition)
 - [Tactician's Ring](/items-tacticians-ring/)

@@ -2,7 +2,6 @@
 bookHidden: true
 title: "Tactician's Ring"
 ---
-
 ## Tactician's Ring
 *Wondrous Item, common*
 
